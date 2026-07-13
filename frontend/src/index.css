@@ -1,0 +1,22 @@
+/* Minimal global reset. Page-specific styling lives in src/styles/Home.css
+   (and any future per-page stylesheet), so this file intentionally stays light. */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}

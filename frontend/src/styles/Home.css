@@ -1,0 +1,419 @@
+/* ================= FONT ================= */
+
+@font-face {
+    font-family: "Saiba";
+    src: url("../fonts/SAIBA-45.ttf");
+}
+
+@font-face {
+    font-family: "Sector";
+    src: url("../fonts/Sportrop.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --black:#060606;
+    --dark:#101010;
+    --panel:#151515;
+
+    --red:#d90429;
+
+    --yellow:#ffcc00;
+
+    --white:#eeeeee;
+
+    --line:#2a2a2a;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--black);
+
+    color:white;
+
+    font-family:"Sector",sans-serif;
+
+}
+
+.home{
+
+    min-height:100vh;
+
+    background:
+    radial-gradient(circle at top,
+    rgba(255,0,0,.08),
+    transparent 40%),
+
+    linear-gradient(
+    to bottom,
+    #050505,
+    #090909,
+    #050505);
+
+}
+
+/* ================= HEADER ================= */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    height:100px;
+
+    background:rgba(0,0,0);
+
+    border-bottom:2px solid var(--red);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 50px;
+
+    z-index:999;
+
+}
+
+.header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.logo{
+
+    width:75px;
+
+}
+
+.header h1{
+
+    color:var(--yellow);
+
+    letter-spacing:4px;
+
+    font-size:22px;
+
+    font-family:"Saiba",sans-serif;
+
+}
+
+.hamburgerButton{
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition: 1s; 
+
+}
+
+.hamburgerButton:hover{
+
+    background:rgba(255,204,0,.13);
+
+    border-color:rgba(255,204,0,.55);
+    
+    transition: 1s; 
+
+}
+
+.hamburgerButton img{
+
+    width:75px;
+    
+    transition: 1s; 
+
+}
+
+/* ================= HERO ================= */
+
+.hero{
+
+    margin-top:85px;
+
+    height:700px;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    filter:
+
+    brightness(.42)
+
+    saturate(.9);
+
+}
+
+.heroOverlay{
+
+    position:absolute;
+
+    left:8%;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+.heroOverlay h2{
+
+    font-size:72px;
+
+    color:white;
+
+    text-shadow:
+
+    0 0 25px red;
+
+    letter-spacing:8px;
+
+    font-family:"Saiba",sans-serif;
+
+}
+
+
+.heroOverlay p{
+
+    margin-top:25px;
+
+    color:var(--yellow);
+
+    letter-spacing:5px;
+
+    font-size:20px;
+
+    font-family:"Saiba",sans-serif;
+    
+}
+
+/* ================= MAIN ================= */
+
+.content{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:120px 50px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(450px,1fr));
+
+    gap:50px;
+
+}
+
+.card{
+
+    background:rgba(20,20,20,.85);
+
+    border:1px solid var(--line);
+
+    border-left:5px solid var(--red);
+
+    padding:45px;
+
+    transition:.35s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,204,0,.12),
+    transparent);
+
+    transition:.7s;
+
+}
+
+.card:hover::before{
+
+    left:100%;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+
+    0 0 35px rgba(255,0,0,.25);
+
+}
+
+.card h2{
+
+    color:var(--yellow);
+
+    margin-bottom:30px;
+
+    letter-spacing:4px;
+
+    font-family:"Saiba",sans-serif;
+
+}
+
+.card p{
+
+    font-family:"Sector",Arial,Helvetica,sans-serif;
+
+    line-height:1.8;
+
+    color:#cccccc;
+
+}
+
+.card ul{
+
+    margin-left:20px;
+
+    font-family:"Sector",Arial,sans-serif;
+
+    color:#d8d8d8;
+
+    line-height:2;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    margin-top:80px;
+
+    border-top:2px solid var(--red);
+
+    background: red;
+
+}
+
+.contact{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:70px 50px;
+
+}
+
+.contact h2{
+
+    color:var(--yellow);
+
+    margin-bottom:30px;
+
+    letter-spacing:4px;
+
+    font-family:"Saiba",sans-serif;
+
+}
+
+.contact p{
+
+    margin-bottom:15px;
+
+    color:#bbbbbb;
+
+    font-family:"Sector",Arial,sans-serif;
+
+}
+
+.footerBanner{
+
+    width:100%;
+
+    object-fit:cover;
+
+}
+
+.blackbg{
+    background: black;
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#080808;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--red);
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--yellow);
+
+}
