@@ -1,0 +1,110 @@
+/* ================================================================
+   GLOBAL THEME
+   Fonts, CSS variables and base resets shared by every page.
+   Imported once in main.tsx so it's always available, regardless
+   of which page/route is loaded first.
+   ================================================================ */
+
+/* ================= FONT ================= */
+
+@font-face {
+    font-family: "Saiba";
+    src: url("../fonts/SAIBA-45.ttf");
+}
+
+@font-face {
+    font-family: "JikiTourai";
+    src: url("../fonts/JikiTourai.ttf");
+}
+
+@font-face {
+    font-family: "JetBrains";
+    src: url("../fonts/JetBrainsMono-Bold.ttf");
+}
+
+@font-face {
+    font-family: "JetBrainsBold";
+    src: url("../fonts/JetBrainsMono-Medium.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+    --black:#060606;
+    --dark:#101010;
+    --panel:#151515;
+
+    --red:#d90429;
+
+    --yellow:#ffcc00;
+
+    --white:#eeeeee;
+
+    --line:#2a2a2a;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+b{
+    font-family: JetBrainsBold, sans-serif;
+
+    color:var(--yellow);
+
+    line-height:2;
+
+    max-width:640px;
+
+    margin-bottom:26px;
+}
+
+hr{
+    border: none;
+    height: 2px;
+    background-color: var(--red);
+}
+
+body{
+
+    background:var(--black);
+
+    color:white;
+
+    font-family:"JetBrains",sans-serif;
+
+}
+
+/* ================= SCROLLBAR ================= */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#080808;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--red);
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--yellow);
+
+}

@@ -1,0 +1,634 @@
+/* ================= HEADER ================= */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    height:100px;
+
+    background:rgba(0,0,0,.92);
+
+    border-bottom:2px solid var(--red);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 50px;
+
+    z-index:999;
+
+}
+
+.header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.logo{
+
+    width:75px;
+
+}
+
+.header h1{
+
+    color:var(--yellow);
+
+    letter-spacing:4px;
+
+    font-size:22px;
+
+    font-family:"Saiba",sans-serif;
+
+}
+
+.hamburgerButton{
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:1s;
+
+    position:relative;
+
+    z-index:1001;
+
+}
+
+.hamburgerButton:hover{
+
+    background:rgba(255,204,0,.13);
+
+    border-color:rgba(255,204,0,.55);
+
+    transition:1s;
+
+}
+
+.hamburgerButton img{
+
+    width:75px;
+
+    transition:1s;
+
+}
+
+/* ================= NAV OVERLAY ================= */
+
+.navOverlay{/* ================= HEADER ================= */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    width:100%;
+
+    height:100px;
+
+    background:rgba(0,0,0,.92);
+
+    border-bottom:2px solid var(--red);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 50px;
+
+    z-index:999;
+
+}
+
+.header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.logo{
+
+    width:75px;
+
+}
+
+.header h1{
+
+    color:var(--yellow);
+
+    letter-spacing:4px;
+
+    font-size:22px;
+
+    font-family:"Saiba",sans-serif;
+
+}
+
+.hamburgerButton{
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    transition:1s;
+
+    position:relative;
+
+    z-index:1001;
+
+}
+
+.hamburgerButton:hover{
+
+    background:rgba(255,204,0,.13);
+
+    border-color:rgba(255,204,0,.55);
+
+    transition:1s;
+
+}
+
+.hamburgerButton img{
+
+    width:75px;
+
+    transition:1s;
+
+}
+
+/* ================= NAV OVERLAY ================= */
+
+.navOverlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(4,4,4,.97);
+
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:opacity .4s ease;
+
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(217,4,41,.12), transparent 45%),
+        radial-gradient(circle at 80% 80%, rgba(255,204,0,.08), transparent 45%);
+
+}
+
+.navOverlayOpen{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+.navMenu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    width:min(600px,90%);
+
+}
+
+.navLink{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+    text-decoration:none;
+
+    padding:16px 20px;
+
+    border-left:3px solid transparent;
+
+    color:var(--white);
+
+    font-family:"Saiba",sans-serif;
+
+    font-size:26px;
+
+    letter-spacing:3px;
+
+    opacity:0;
+
+    transform:translateX(-20px);
+
+    transition:opacity .35s ease, transform .35s ease, border-color .25s ease, background .25s ease, color .25s ease;
+
+}
+
+.navOverlayOpen .navLink{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.navLink:hover{
+
+    background:rgba(255,204,0,.07);
+
+    border-left-color:var(--yellow);
+
+    color:var(--yellow);
+
+}
+
+.navLinkIndex{
+
+    font-family:"JetBrains",monospace;
+
+    font-size:15px;
+
+    color:var(--red);
+
+    letter-spacing:2px;
+
+}
+
+.navLinkLabel{
+
+    flex:1;
+
+}
+
+@media (max-width:640px){
+
+    .navLink{
+
+        font-size:19px;
+
+        gap:14px;
+
+    }
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    margin-top:80px;
+
+    border-top:2px solid var(--red);
+
+    background: red;
+
+}
+
+.blackbg{
+    background: black;
+}
+
+.contact{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:70px 50px;
+
+}
+
+.contact h2{
+
+    color:var(--yellow);
+
+    margin-bottom:30px;
+
+    letter-spacing:4px;
+
+    font-family:"Saiba",sans-serif;
+
+}
+
+.contactLinks{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.contact p{
+
+    margin-bottom:0;
+
+    color:#bbbbbb;
+
+    font-family:"JetBrains",system-ui;
+
+}
+
+.contact p b{
+
+    color:var(--yellow);
+
+    font-family:"JetBrainsBold",sans-serif;
+
+    margin-right:8px;
+
+    line-height:1;
+
+    max-width:none;
+
+}
+
+.contact a{
+
+    color:#bbbbbb;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.contact a:hover{
+
+    color:var(--yellow);
+
+}
+
+.footerBanner{
+
+    width:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(4,4,4,.97);
+
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transition:opacity .4s ease;
+
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(217,4,41,.12), transparent 45%),
+        radial-gradient(circle at 80% 80%, rgba(255,204,0,.08), transparent 45%);
+
+}
+
+.navOverlayOpen{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+}
+
+.navMenu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    width:min(600px,90%);
+
+}
+
+.navLink{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+
+    text-decoration:none;
+
+    padding:16px 20px;
+
+    border-left:3px solid transparent;
+
+    color:var(--white);
+
+    font-family:"Saiba",sans-serif;
+
+    font-size:26px;
+
+    letter-spacing:3px;
+
+    opacity:0;
+
+    transform:translateX(-20px);
+
+    transition:opacity .35s ease, transform .35s ease, border-color .25s ease, background .25s ease, color .25s ease;
+
+}
+
+.navOverlayOpen .navLink{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.navLink:hover{
+
+    background:rgba(255,204,0,.07);
+
+    border-left-color:var(--yellow);
+
+    color:var(--yellow);
+
+}
+
+.navLinkIndex{
+
+    font-family:"JetBrains",monospace;
+
+    font-size:15px;
+
+    color:var(--red);
+
+    letter-spacing:2px;
+
+}
+
+.navLinkLabel{
+
+    flex:1;
+
+}
+
+@media (max-width:640px){
+
+    .navLink{
+
+        font-size:19px;
+
+        gap:14px;
+
+    }
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    margin-top:80px;
+
+    border-top:2px solid var(--red);
+
+    background: red;
+
+}
+
+.blackbg{
+    background: black;
+}
+
+.contact{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:70px 50px;
+
+}
+
+.contact h2{
+
+    color:var(--yellow);
+
+    margin-bottom:30px;
+
+    letter-spacing:4px;
+
+    font-family:"Saiba",sans-serif;
+
+}
+
+.contactLinks{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.contact p{
+
+    margin-bottom:0;
+
+    color:#bbbbbb;
+
+    font-family:"JetBrains",system-ui;
+
+}
+
+.contact p b{
+
+    color:var(--yellow);
+
+    font-family:"JetBrainsBold",sans-serif;
+
+    margin-right:8px;
+
+    line-height:1;
+
+    max-width:none;
+
+}
+
+.contact a{
+
+    color:#bbbbbb;
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.contact a:hover{
+
+    color:var(--yellow);
+
+}
+
+.footerBanner{
+
+    width:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
