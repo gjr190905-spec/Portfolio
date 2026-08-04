@@ -8,19 +8,7 @@ function Footer() {
             <div className="blackbg">
                 <div className="contact">
 
-                    <h2>CONTACT</h2>
-
-                    <div className="contactLinks">
-
-                        <p><b>Email:</b> <a href="mailto:gjr190905@gmail.com">gjr190905@gmail.com</a></p>
-
-                        <p><b>LinkedIn:</b> <a href="https://linkedin.com/in/gan-jia-riang" target="_blank" rel="noreferrer">linkedin.com/in/gan-jia-riang</a></p>
-
-                        <p><b>GitHub:</b> <a href="https://github.com/" target="_blank" rel="noreferrer">github.com/your-username</a></p>
-
-                        <p><b>Location:</b> Singapore</p>
-
-                    </div>
+                    <h2>Building, supporting, and securing systems that matter</h2>
 
                 </div>
             </div>

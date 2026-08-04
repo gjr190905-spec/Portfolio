@@ -1,28 +1,31 @@
 import "../styles/Page.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import MediaPlaceholder from "../components/MediaPlaceholder";
+import profilePicture from "../assets/images/profile/Pic.png";
+import DocumentLink from "../components/DocumentLink";
+import resumePDF from "../assets/documents/Gan Jia Riang Resume.pdf";
 
 const CONTACT_LINKS = [
     {
         label: "Email",
-        value: "gjr190905@gmail.com",
-        href: "mailto:gjr190905@gmail.com",
+        value: "ganjiariang.matthew@gmail.com",
     },
     {
         label: "LinkedIn",
-        value: "linkedin.com/in/gan-jia-riang",
-        href: "https://linkedin.com/in/gan-jia-riang",
-    },
-    {
-        label: "GitHub",
-        value: "github.com/your-username",
-        href: "https://github.com/",
+        value: "www.linkedin.com/in/gan-jia-riang-matthew",
+        href: "https://www.linkedin.com/in/gan-jia-riang-matthew",
     },
     {
         label: "Location",
         value: "Singapore",
         href: undefined,
     },
+    {
+        label: "Number",
+        value: "+65 8618 4860",
+        href: undefined,
+    }
 ];
 
 function Contacts() {
@@ -37,8 +40,25 @@ function Contacts() {
                 <hr />
                 <br />
 
+                <div className="avatar">
+                    <img
+                    src={profilePicture}
+                    alt="profile picture"
+                />
+                </div>
+                <br/>
+                <div className="ctaButtons">
+                        <DocumentLink
+                            label="View My Resume"
+                            href={resumePDF}
+                        />
+                </div>
+
+                <br/>
+                <hr/>
+
                 <p>
-                    Feel free to reach out — I'm always happy to talk about IT infrastructure,
+                    Feel free to reach out. I'm always happy to talk about IT infrastructure,
                     cloud, cybersecurity, or upcoming internship opportunities.
                 </p>
 

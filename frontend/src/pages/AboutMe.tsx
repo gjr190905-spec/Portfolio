@@ -2,6 +2,7 @@ import "../styles/Page.css";
 import "../styles/Home.css"
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import MediaPlaceholder from "../components/MediaPlaceholder";
 import banner from "../assets/images/banners/about_banner.png";
 
 const JOURNEY = [
@@ -49,7 +50,7 @@ function AboutMe() {
 
             <Header />
 
-                        {/* ================= HERO ================= */}
+            {/* ================= HERO ================= */}
 
             <section className="hero">
 
@@ -86,13 +87,10 @@ function AboutMe() {
                     (Previously known as Diploma in Information Technology) student at Singapore Polytechnic 
                     specializing in <b>Cloud Computing &amp; Cybersecurity</b>, and a part-time <b>IT Project
                     Engineer</b> supporting government infrastructure projects with Sky &amp; F Pte Ltd.
-                    Along the way, I've worked on infrastructure projects for agencies including
-                    ICA, URA, and MSF, which is where most of my hands-on IT experience comes from.
                 </p>
                 </section>
 
-
-                {/* ================= JOURNEY ================= */}
+                {/* ================= JOURNEY ================= 
 
                 <section className="pageSection">
                     <h2>MY JOURNEY</h2>
@@ -112,6 +110,21 @@ function AboutMe() {
                         ))}
                     </div>
                 </section>
+                */}
+
+                {/* ================= GALLERY =================
+
+                <section className="pageSection">
+                    <h2>ON THE JOB</h2>
+                    <p className="pageSectionSub">A few snapshots along the way</p>
+
+                    <div className="mediaGrid">
+                        <MediaPlaceholder caption="Working on an ICA infrastructure project"/>
+                        <MediaPlaceholder caption="With the team at Sky & F" icon="🤝" />
+                        <MediaPlaceholder caption="Studying at Singapore Polytechnic" icon="🎓" />
+                    </div>
+                </section>
+                */}
 
                 {/* ================= INTERESTS ================= */}
 

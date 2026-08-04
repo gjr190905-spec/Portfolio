@@ -1,6 +1,11 @@
 import "../styles/Home.css";
+import "../styles/Page.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import MediaPlaceholder from "../components/MediaPlaceholder";
+
+import DocumentLink from "../components/DocumentLink";
+import resumePDF from "../assets/documents/Gan Jia Riang Resume.pdf";
 
 import banner from "../assets/images/banners/home_banner.png";
 import profilePicture from "../assets/images/profile/Pic.png";
@@ -115,9 +120,10 @@ function Home() {
                             View Projects
                         </a>
 
-                        <a href="/resume.pdf" download className="btn btnSecondary">
-                            Download Resume
-                        </a>
+                        <DocumentLink
+                            label="View My Resume"
+                            href={resumePDF}
+                        />
 
                     </div>
 
@@ -158,6 +164,25 @@ function Home() {
                 </div>
 
             </section>
+
+            {/* ================= GALLERY / PROOF ================= 
+
+            <section className="skills">
+
+                <h2>IN THE FIELD</h2>
+                <hr/>
+
+                <br/>
+                <div className="mediaGrid">
+
+                    <MediaPlaceholder caption="On-site at a government infrastructure project" icon="🏛️" />
+                    <MediaPlaceholder caption="Leading the project team" icon="🧑‍💻" />
+                    <MediaPlaceholder caption="AWS home lab in action" icon="☁️" />
+
+                </div>
+
+            </section>
+            */}
 
             {/* ================= TECHNICAL SKILLS ================= */}
 
@@ -200,7 +225,7 @@ function Home() {
 
                         <li>IT Project Engineer + Project Team Lead</li>
 
-                        <li>Learning Cloud & Infrastructure</li>
+                        <li>Learning Cloud & Cybersecurity</li>
 
                     </ul>
 

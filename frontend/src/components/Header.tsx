@@ -12,11 +12,11 @@ const NAV_LINKS = [
     { label: "About Me", to: "/about" },
     { label: "Projects", to: "/projects" },
     { label: "Industrial Experience", to: "/industrial-experience" },
-    { label: "Certifications & Achievements", to: "/certifications" },
+    { label: "CERTIFICATIONS & Badges", to: "/certifications" },
     { label: "Education", to: "/education" },
     { label: "Contacts", to: "/contacts" },
-    { label: "Hobby and Others", to: "/hobbies" },
 ];
+// { label: "Hobby and Others", to: "/hobbies" },
 
 function Header() {
     const [menuOpen, setMenuOpen] = useState(false);

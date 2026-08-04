@@ -1,6 +1,7 @@
 import "../styles/Page.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import MediaPlaceholder from "../components/MediaPlaceholder";
 
 const HOBBIES = [
     {
@@ -47,7 +48,7 @@ function Hobbies() {
                     <div className="grid2">
                         {HOBBIES.map((item) => (
                             <div className="infoCard" key={item.title}>
-                                <span className="certIcon">{item.icon}</span>
+                                <MediaPlaceholder icon={item.icon} aspect="wide" />
                                 <h3>{item.title}</h3>
                                 <p>{item.body}</p>
                             </div>

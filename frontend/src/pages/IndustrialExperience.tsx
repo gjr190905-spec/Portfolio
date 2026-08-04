@@ -1,6 +1,10 @@
 import "../styles/Page.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import MediaPlaceholder from "../components/MediaPlaceholder";
+import DocumentLink from "../components/DocumentLink";
+import LOC from "../assets/documents/LetterOCommendation.pdf";
+import banner from "../assets/images/banners/work_banner.png";
 
 const EXPERIENCE = [
     {
@@ -11,7 +15,7 @@ const EXPERIENCE = [
         bullets: [
             "Lead project teams in managing client communications and manpower allocation for IT infrastructure projects",
             "Coordinate issue resolution between engineers and clients to ensure smooth system deployment and operations",
-            "Successfully completed 2 government projects (IT asset management) within a month while leading a team of 5–10 IT Project Engineers",
+            "Successfully completed 2 government projects (IT asset management) within a month while leading a team of 5–10 IT Project Engineers *",
         ],
     },
     {
@@ -23,7 +27,7 @@ const EXPERIENCE = [
             "Mentor junior engineers and support their technical and professional development",
             "Monitor system alerts and provide technical support for clients",
             "Manage client systems and contribute to infrastructure deployment and maintenance",
-            "Supported infrastructure for ICA, URA, and MSF, consistently ensuring high availability uptime for major government systems",
+            "Supported infrastructure for clients, consistently ensuring high availability uptime for major government systems *",
         ],
     },
     {
@@ -34,18 +38,18 @@ const EXPERIENCE = [
         bullets: [
             "Monitored system alerts and provided technical support to ensure system stability for clients",
             "Performed hardware troubleshooting including UPS (Uninterruptible Power Supply) replacement and system maintenance",
-            "Successfully mitigated serious system alerts from government infrastructure that would have led to massive downtime",
-            "Awarded a Letter of Commendation",
+            "Successfully mitigated serious system alerts from government infrastructure that would have led to massive downtime *",
+            "Awarded a Letter of Commendation *",
         ],
     },
     {
-        role: "[ Your role — e.g. Crew Member / Service Staff ]",
-        org: "[ Restaurant name ] · [ Part-Time ]",
-        date: "[ Add dates ]",
+        role: "Restaurant Crew Member",
+        org: "Santouka Ramen · Part-Time, On-site",
+        date: "Dec 2021 – May 2025",
         current: false,
         bullets: [
-            "[ This entry is a placeholder — send over the restaurant name, your role, dates, and a couple of responsibilities and I'll fill this in properly. ]",
-            "Front-of-house / customer service experience is genuinely worth including — it shows communication and teamwork skills that complement the technical roles above.",
+            "Worked in a fast-paced team environment while maintaining operational efficiency and customer service standards",
+            "Developed communication, teamwork, and multitasking skills through high-volume operational support",
         ],
     },
 ];
@@ -55,19 +59,47 @@ function IndustrialExperience() {
         <div className="page">
 
             <Header />
+            {/* ================= HERO ================= */}
 
+            <section className="hero">
+
+                <img
+                    src={banner}
+                    alt="Banner"
+                />
+
+                <div className="heroOverlay">
+
+                    <h2>
+                        Industrial Experience
+                    </h2>
+                    <hr/>
+
+                    <p>
+                        My real-world experience
+                    </p>
+
+                </div>
+
+            </section>
+            
             <div className="pageBody">
-
+            <section>
                 <h2>INDUSTRIAL EXPERIENCE</h2>
                 <hr />
                 <br />
 
                 <p>
                     Hands-on work experience across IT infrastructure support, project
-                    leadership, and government-linked systems — plus earlier customer-facing
-                    experience that helped build the communication skills behind all of it.
+                    leadership, and government-linked systems and customer-facing
+                    experience that helped build my communication skills behind all of it.
                 </p>
-
+                    <br/>
+                <p>
+                    <b>Note:</b> Due to my most of  my work experience being confidential government information,
+                    I am only able to talk about my job scope.
+                </p>
+            </section>
                 <section className="pageSection">
 
                     <div className="timeline">
@@ -90,6 +122,32 @@ function IndustrialExperience() {
 
                 </section>
 
+                {/* ================= EVIDENCE / DOCUMENTS ================= */}
+
+                <section className="pageSection">
+                    <h2>DOCUMENTS &amp; EVIDENCE</h2>
+                    <p className="pageSectionSub">Letters, records, and verification</p>
+
+                    <div className="documentList">
+                        <DocumentLink label="Letter of Commendation (Junior IT Project Engineer - Internship)" 
+                        href={LOC}/>
+                        <p>[-Click to view-]</p>
+                    </div>
+                </section>
+
+                {/* ================= GALLERY ================= 
+
+                <section className="pageSection">
+                    <h2>ON SITE</h2>
+                    <p className="pageSectionSub">Photos from project work</p>
+
+                    <div className="mediaGrid">
+                        <MediaPlaceholder caption="Deploying infrastructure on-site" icon="🖥️" />
+                        <MediaPlaceholder caption="Leading the project team" icon="🧑‍💻" />
+                        <MediaPlaceholder caption="System monitoring in action" icon="📡" />
+                    </div>
+                </section>
+                    */}
             </div>
 
             <Footer />

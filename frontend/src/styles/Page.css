@@ -144,6 +144,8 @@
 
     transition:.3s;
 
+    overflow:hidden;
+
 }
 
 .infoCard:hover{
@@ -167,6 +169,20 @@
     font-size:16px;
 
     margin-bottom:10px;
+
+}
+
+.infoCard .mediaFigure{
+
+    margin:-26px -24px 18px;
+
+}
+
+.infoCard .mediaPlaceholder{
+
+    border:none;
+
+    border-bottom:1px solid var(--line);
 
 }
 
@@ -419,6 +435,33 @@
 
 }
 
+.projectCard .mediaFigure{
+
+    margin:0;
+
+}
+
+.projectCard .mediaPlaceholder{
+
+    border:none;
+
+    border-bottom:1px solid var(--line);
+
+    background:
+        radial-gradient(circle at 30% 20%,rgba(217,4,41,.18),transparent 55%),
+        radial-gradient(circle at 80% 80%,rgba(255,204,0,.12),transparent 55%),
+        linear-gradient(160deg,#141414,#0a0a0a);
+
+}
+
+.projectCard .mediaIcon{
+
+    font-size:52px;
+
+    opacity:1;
+
+}
+
 .projectBody{
 
     padding:26px 26px 28px;
@@ -485,6 +528,12 @@
     margin-top:auto;
 
     padding-top:18px;
+
+}
+
+.projectBody .documentItem{
+
+    margin-top:16px;
 
 }
 
@@ -562,7 +611,29 @@
 
 }
 
+.certCard .documentItem{
+
+    margin-top:16px;
+
+    padding:10px 14px;
+
+}
+
 /* ================= CONTACT PAGE ================= */
+
+.contactPhoto{
+
+    width:140px;
+
+    margin-bottom:24px;
+
+}
+
+.contactPhoto .mediaPlaceholder{
+
+    border-radius:50%;
+
+}
 
 .contactPageGrid{
 
@@ -635,5 +706,235 @@
     letter-spacing:.5px;
 
     word-break:break-word;
+
+}
+
+/* ================= MEDIA PLACEHOLDERS ================= */
+
+.mediaGrid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:22px;
+
+    margin-top:24px;
+
+}
+
+.mediaFigure{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.mediaPlaceholder{
+
+    position:relative;
+
+    width:100%;
+
+    border:1.5px dashed var(--line);
+
+    background:
+        repeating-linear-gradient(
+            135deg,
+            rgba(255,255,255,.015) 0px,
+            rgba(255,255,255,.015) 10px,
+            transparent 10px,
+            transparent 20px
+        ),
+        rgba(255,255,255,.015);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    color:#5c5c5c;
+
+    transition:.3s;
+
+    overflow:hidden;
+
+}
+
+.mediaPlaceholder:hover{
+
+    border-color:var(--yellow);
+
+    color:var(--yellow);
+
+}
+
+.mediaPlaceholder img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.mediaWide{
+
+    aspect-ratio:16/10;
+
+}
+
+.mediaSquare{
+
+    aspect-ratio:1/1;
+
+}
+
+.mediaTall{
+
+    aspect-ratio:3/4;
+
+}
+
+.mediaIcon{
+
+    font-size:30px;
+
+    opacity:.7;
+
+}
+
+.mediaPlaceholderText{
+
+    font-family:"JetBrains",monospace;
+
+    font-size:10.5px;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+.mediaCaption{
+
+    margin-top:10px;
+
+    font-family:"JetBrains",system-ui;
+
+    font-size:12.5px;
+
+    color:#999999;
+
+    line-height:1.5;
+
+}
+
+/* ================= DOCUMENT / PROOF LINKS ================= */
+
+.documentList{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+    margin-top:18px;
+
+}
+
+.documentItem{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:12px 16px;
+
+    border:1px solid var(--line);
+
+    background:rgba(255,255,255,.02);
+
+    text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.documentItem.isAvailable{
+
+    border-color:var(--red);
+
+    cursor:pointer;
+
+}
+
+.documentItem.isAvailable:hover{
+
+    border-color:var(--yellow);
+
+    background:rgba(255,204,0,.06);
+
+    color: var(--yellow);
+
+}
+
+.documentIcon{
+
+    font-size:17px;
+
+    flex-shrink:0;
+
+}
+
+.documentLabel{
+
+    font-family:"JetBrains",system-ui;
+
+    font-size:15px;
+
+    color: var(--red);
+
+    flex:1;
+
+}
+
+.documentItem.isAvailable .documentLabel{
+
+    color:var(--red);
+
+}
+
+.documentStatus{
+
+    font-family:"JetBrains",monospace;
+
+    font-size:10px;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+    color: var(--red);
+
+    flex-shrink:0;
+
+}
+
+.documentItem.isAvailable .documentStatus{
+
+    color:var(--yellow);
 
 }

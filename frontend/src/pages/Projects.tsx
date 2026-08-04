@@ -1,12 +1,39 @@
 import "../styles/Page.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import MediaPlaceholder from "../components/MediaPlaceholder";
+import banner from "../assets/images/banners/project_banner.png"
+import DocumentLink from "../components/DocumentLink";
+import { href } from "react-router-dom";
 
 const PROJECTS = [
     {
-        icon: "☁️",
+        icon: "🛡️",
+        imageSrc: "src/assets/images/projects/DigiForensics.png",
+        imageAlt: "Digital Forensics project banner",
         kicker: "Independent Project",
-        title: "AWS Home Lab",
+        title: "Digital Forensics - Security Operations Center (SOC) Incident Investigation",
+        description:
+            "I acted as a Level 1 analyst in a simulated Security Operations Center, practicing digital forensics and vulnerability assessment end to end.",
+        bullets: [
+            "Correlated 9 SIEM alerts in Kibana and identified 5 attacker IP addresses across the US and France",
+            "Traced command-and-control (C2) communication patterns",
+            "Analyzed malicious scripts and outdated Flash versions with Wireshark and VirusTotal to classify malware families",
+            "Documented containment steps and prevention strategies, including patch management and disabling Flash",
+        ],
+        tags: ["Digital Forensics", "SIEM", "Wireshark", "VirusTotal", "OSINT"],
+         documents: [
+            { label: "Project Presentation (PDF)", url: "public/documents/SOC/Presentation.pdf" },
+            { label: "Incident Report (PDF)", url: "public/documents/SOC/Project_report.pdf" },
+            { label: "Incident Ticket (PDF)", url: "public/documents/SOC/Project_ticket.pdf" },
+        ],
+    },
+    {
+        icon: "☁️",
+        imageSrc: "src/assets/images/projects/CloudFund.png",
+        imageAlt: "Cloud project banner",
+        kicker: "Independent Project",
+        title: "AWS Highly Available Cloud Infrastructure for Web Application",
         description:
             "A fault-tolerant AWS architecture built from scratch to practice real-world cloud design patterns rather than just theory.",
         bullets: [
@@ -16,73 +43,30 @@ const PROJECTS = [
             "S3 storage and IAM roles configured following least-privilege principles",
         ],
         tags: ["AWS", "VPC", "EC2", "ALB", "Auto Scaling", "RDS", "IAM"],
-    },
-    {
-        icon: "🏛️",
-        kicker: "Professional Experience",
-        title: "Government Infrastructure Support",
-        description:
-            "Ongoing hands-on work supporting IT infrastructure for government-linked systems, from monitoring through to on-site deployment.",
-        bullets: [
-            "Supported infrastructure projects for agencies including ICA, URA, and MSF",
-            "Monitored system alerts and resolved issues before they caused downtime",
-            "Led a team of 5–10 IT Project Engineers to deliver 2 government IT asset management projects within a month",
-            "Received a Letter of Commendation for mitigating serious system alerts",
+        documents: [
+            { label: "Cloud Design Document (PDF)", url: "/documents/CloudFund/AWSCloudDesign-Documentation.pdf" },
         ],
-        tags: ["Infrastructure", "Monitoring", "Project Leadership", "Government IT"],
-    },
-    {
-        icon: "🐧",
-        kicker: "Independent Project",
-        title: "Linux Server Deployment",
-        description:
-            "Provisioning, hardening, and maintaining Linux servers across a range of distributions as part of ongoing systems administration practice.",
-        bullets: [
-            "Deployed and configured services across Ubuntu, Debian, and Red Hat environments",
-            "Practiced user/permission management, package management, and basic hardening",
-            "Applied the same Linux fundamentals used daily in production infrastructure support",
-        ],
-        tags: ["Linux", "Ubuntu", "Debian", "Red Hat", "Sysadmin"],
-    },
-    {
-        icon: "🌐",
-        kicker: "Independent Project",
-        title: "Network Troubleshooting Project",
-        description:
-            "Applied structured troubleshooting methodology to diagnose and resolve connectivity and performance issues across a lab network environment.",
-        bullets: [
-            "Practiced systematic fault isolation across TCP/IP layers",
-            "Used packet capture and traffic analysis to pinpoint root causes",
-            "Documented findings and resolution steps for repeatability",
-        ],
-        tags: ["TCP/IP", "Troubleshooting", "Cisco", "Networking"],
-    },
-    {
-        icon: "🛡️",
-        kicker: "Independent Project",
-        title: "Cybersecurity Lab — SOC Investigation",
-        description:
-            "Acted as a Level 1 analyst in a simulated Security Operations Center, practicing digital forensics and vulnerability assessment end to end.",
-        bullets: [
-            "Correlated 9 SIEM alerts in Kibana and identified 5 attacker IP addresses across the US and France",
-            "Traced command-and-control (C2) communication patterns",
-            "Analyzed malicious scripts and outdated Flash versions with Wireshark and VirusTotal to classify malware families",
-            "Documented containment steps and prevention strategies, including patch management and disabling Flash",
-        ],
-        tags: ["Digital Forensics", "SIEM", "Wireshark", "VirusTotal", "OSINT"],
     },
     {
         icon: "🚀",
-        kicker: "Hackathon Project",
-        title: "Regrove",
+        kicker: "Hackathon Project of Team HexaByte",
+        imageSrc: "src/assets/images/projects/Regrove.png",
+        imageAlt: "Hackathon banner",
+        title: "Regrove (Dell InnovateDash Hackathon 2026)",
         description:
-            "A case-management web app concept built for a hackathon, aimed at helping social workers track and coordinate client cases more effectively.",
+            "A case-management web app called Regrove concept built for a hackathon, aimed at helping social workers track and coordinate client cases more effectively.",
         bullets: [
+            "I took on the role of a frontend engineer where I planned and ensured a comfortable-to-use app for for the team",
             "Built the frontend with React and TypeScript",
             "Designed flows for case tracking and team coordination",
-            "Built under hackathon time constraints as part of ongoing hackathon experience alongside PolyFinTech100 (NETS) and DELL SP InnovateDash",
+            "Finished as finalists of the Hackathon",
         ],
         tags: ["React", "TypeScript", "Hackathon", "UI/UX"],
+        documents: [
+            { label: "Hackathon Presentation (PDF)", url: "/documents/Regrove/RegroveSlides.pdf" },
+            { label: "Project Document (PDF)", url: "/documents/Regrove/DocumentRegrove.pdf" },
+            { label: "Frontend Sitemap (PDF)", url: "/documents/Regrove/SitemapRegrove.pdf" },
+    ],
     },
 ];
 
@@ -92,18 +76,41 @@ function Projects() {
 
             <Header />
 
-            <div className="pageBody">
+            {/* ================= HERO ================= */}
 
+            <section className="hero">
+
+                <img
+                    src={banner}
+                    alt="Banner"
+                />
+
+                <div className="heroOverlay">
+
+                    <h2>
+                        My Projects
+                    </h2>
+                    <hr/>
+
+                    <p>
+                        Building and honing my skills
+                    </p>
+
+                </div>
+
+            </section>
+
+            <div className="pageBody">
+            <section>
                 <h2>PROJECTS</h2>
                 <hr />
                 <br />
 
                 <p>
-                    A mix of independent labs and real professional work — spanning cloud
-                    architecture, Linux administration, networking, and cybersecurity.
-                    Write-ups below; screenshots and live links are being added as I package
-                    each project up properly.
+                    A mix of independent labs and real professional work: spanning cloud
+                    architecture, networking, and cybersecurity.
                 </p>
+            </section>
 
                 <section className="pageSection">
 
@@ -111,9 +118,11 @@ function Projects() {
                         {PROJECTS.map((project) => (
                             <article className="projectCard" key={project.title}>
 
-                                <div className="projectVisual">
-                                    {project.icon}
-                                </div>
+                                <MediaPlaceholder 
+                                icon={project.icon}
+                                src={project.imageSrc}
+                                alt={project.imageAlt}
+                                aspect="wide" />
 
                                 <div className="projectBody">
                                     <span className="projectKicker">{project.kicker}</span>
@@ -131,6 +140,21 @@ function Projects() {
                                             <span className="tag" key={tag}>{tag}</span>
                                         ))}
                                     </div>
+
+                                    
+                                    <div className="documentLinks">
+                                        {project.documents.map((doc) => (
+                                        <a
+                                            key={doc.url}
+                                            href={doc.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="documentItem isAvailable"
+                                        >
+                                         <span className="documentLabel">{doc.label}</span>
+                                        </a>
+                                    ))}
+                                </div>
                                 </div>
 
                             </article>
@@ -138,8 +162,6 @@ function Projects() {
                     </div>
 
                 </section>
-
-                <span className="pageBadge">Screenshots &amp; live links coming soon</span>
 
             </div>
 
