@@ -116,9 +116,6 @@ function Home() {
 
                     <div className="ctaButtons">
 
-                        <a href="/projects" className="btn btnPrimary">
-                            View Projects
-                        </a>
 
                         <DocumentLink
                             label="View My Resume"

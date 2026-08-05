@@ -9,7 +9,7 @@ import { href } from "react-router-dom";
 const PROJECTS = [
     {
         icon: "🛡️",
-        imageSrc: "src/assets/images/projects/DigiForensics.png",
+        imageSrc: "/assets/images/projects/DigiForensics.png",
         imageAlt: "Digital Forensics project banner",
         kicker: "Independent Project",
         title: "Digital Forensics - Security Operations Center (SOC) Incident Investigation",
@@ -23,14 +23,14 @@ const PROJECTS = [
         ],
         tags: ["Digital Forensics", "SIEM", "Wireshark", "VirusTotal", "OSINT"],
          documents: [
-            { label: "Project Presentation (PDF)", url: "public/documents/SOC/Presentation.pdf" },
-            { label: "Incident Report (PDF)", url: "public/documents/SOC/Project_report.pdf" },
-            { label: "Incident Ticket (PDF)", url: "public/documents/SOC/Project_ticket.pdf" },
+            { label: "Project Presentation (PDF)", url: "/documents/SOC/Presentation.pdf" },
+            { label: "Incident Report (PDF)", url: "/documents/SOC/Project_report.pdf" },
+            { label: "Incident Ticket (PDF)", url: "/documents/SOC/Project_ticket.pdf" },
         ],
     },
     {
         icon: "☁️",
-        imageSrc: "src/assets/images/projects/CloudFund.png",
+        imageSrc: "/assets/images/projects/CloudFund.png",
         imageAlt: "Cloud project banner",
         kicker: "Independent Project",
         title: "AWS Highly Available Cloud Infrastructure for Web Application",
@@ -50,7 +50,7 @@ const PROJECTS = [
     {
         icon: "🚀",
         kicker: "Hackathon Project of Team HexaByte",
-        imageSrc: "src/assets/images/projects/Regrove.png",
+        imageSrc: "/assets/images/projects/Regrove.png",
         imageAlt: "Hackathon banner",
         title: "Regrove (Dell InnovateDash Hackathon 2026)",
         description:
