@@ -9,7 +9,7 @@ import { href } from "react-router-dom";
 const PROJECTS = [
     {
         icon: "🛡️",
-        imageSrc: "/assets/images/projects/DigiForensics.png",
+        imageSrc: "/projects/DigiForensics.png",
         imageAlt: "Digital Forensics project banner",
         kicker: "Independent Project",
         title: "Digital Forensics - Security Operations Center (SOC) Incident Investigation",
@@ -30,7 +30,7 @@ const PROJECTS = [
     },
     {
         icon: "☁️",
-        imageSrc: "/assets/images/projects/CloudFund.png",
+        imageSrc: "/projects/CloudFund.png",
         imageAlt: "Cloud project banner",
         kicker: "Independent Project",
         title: "AWS Highly Available Cloud Infrastructure for Web Application",
@@ -50,7 +50,7 @@ const PROJECTS = [
     {
         icon: "🚀",
         kicker: "Hackathon Project of Team HexaByte",
-        imageSrc: "/assets/images/projects/Regrove.png",
+        imageSrc: "/projects/Regrove.png",
         imageAlt: "Hackathon banner",
         title: "Regrove (Dell InnovateDash Hackathon 2026)",
         description:
