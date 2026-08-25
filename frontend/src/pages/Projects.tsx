@@ -66,6 +66,7 @@ const PROJECTS = [
             { label: "Hackathon Presentation (PDF)", url: "/documents/Regrove/RegroveSlides.pdf" },
             { label: "Project Document (PDF)", url: "/documents/Regrove/DocumentRegrove.pdf" },
             { label: "Frontend Sitemap (PDF)", url: "/documents/Regrove/SitemapRegrove.pdf" },
+            { label: "Finalist credential (PNG)", url: "/documents/Regrove/Badge.png" },
     ],
     },
 ];
