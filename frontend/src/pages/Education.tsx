@@ -24,9 +24,10 @@ const EDUCATION = [
         bullets: [
             "Majoring in Cloud Computing & Cybersecurity",
             "Previously known as Diploma in Information Technology",
-            "Cumulative GPA: 3.41",
+            "Cumulative GPA: 3.47",
         ],
         cca: [
+            "Gold with honors Co-curricular activities (CCA) award",
             "SP Gryphons (Cybersecurity)",
             "SP SEED (IT & Computer Science)",
             "ECG Ambassadors",
@@ -42,6 +43,7 @@ const EDUCATION = [
             "Cumulative GPA: 3.69",
         ],
         cca: [
+            "Silver Co-curricular activities (CCA) award",
             "ACE Club",
             "Green Ambassador Club",
             "J-Culture Club"
