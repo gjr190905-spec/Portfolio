@@ -83,8 +83,8 @@ function AboutMe() {
                 <br />
 
                 <p>
-                    I'm Jia Riang, also known as Matthew a Diploma in Computer Science 
-                    (Previously known as Diploma in Information Technology) student at Singapore Polytechnic 
+                    I'm Jia Riang, also known as Matthew a Diploma in Information Technology 
+                    (renamed Diploma in Computer Science) student at Singapore Polytechnic 
                     specializing in <b>Cloud Computing &amp; Cybersecurity</b>, and a part-time <b>IT Project
                     Engineer</b> supporting government infrastructure projects with Sky &amp; F Pte Ltd.
                 </p>
@@ -148,7 +148,7 @@ function AboutMe() {
                     <h2>WHERE I'M HEADED</h2>
                     <div className="infoCard">
                         <p>
-                            My goal is to grow into a <b>Cloud / Security Engineer</b> role — combining
+                            My goal is to grow into a <b>Cloud / Security Engineer</b> role, combining
                             what I've learned supporting government infrastructure with deeper expertise
                             in AWS cloud architecture and defensive cybersecurity. I'm available for a
                             1-year internship commencing March 2027.

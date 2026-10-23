@@ -107,7 +107,7 @@ function Home() {
                         
                         You may call me <b>Jia Riang</b> or <b>Matthew.</b>
                         <br />
-                        I am a Computer Science student from Singapore Polytechnic 
+                        I am a Information Technology student from Singapore Polytechnic 
                         specializing in <b>Cybersecurity & Cloud Computing.</b>
                     </p>
 
@@ -216,7 +216,7 @@ function Home() {
 
                     <ul>
 
-                        <li>Diploma in Computer Science</li>
+                        <li>Diploma in Information Technology</li>
 
                         <li>Cyber Security Enthusiast</li>
 

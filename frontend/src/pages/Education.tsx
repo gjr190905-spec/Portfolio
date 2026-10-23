@@ -18,12 +18,12 @@ import returnToPS from "../assets/images/education/returnToPS.jpg"
 const EDUCATION = [
     {
         school: "Singapore Polytechnic",
-        program: "Diploma in Computer Science",
+        program: "Diploma in Information Technology",
         date: "Apr 2025 – Apr 2028",
         current: true,
         bullets: [
             "Majoring in Cloud Computing & Cybersecurity",
-            "Previously known as Diploma in Information Technology",
+            "renamed Diploma in Computer Science",
             "Cumulative GPA: 3.47",
         ],
         cca: [
