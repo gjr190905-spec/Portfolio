@@ -20,7 +20,7 @@ const EXPERIENCE = [
     },
     {
         role: "Senior IT Project Engineer",
-        org: "Sky & F Pte Ltd · Part-Time, On-site",
+        org: "Sky & F Pte Ltd · Contract, On-site",
         date: "Jun 2024 – Present",
         current: true,
         bullets: [
