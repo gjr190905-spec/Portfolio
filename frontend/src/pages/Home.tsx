@@ -11,16 +11,15 @@ import banner from "../assets/images/banners/home_banner.png";
 import profilePicture from "../assets/images/profile/Pic.png";
 
 const QUICK_STATS = [
-    { value: "Networking", label: "Core Skill" },
-    { value: "~3 Years", label: "IT Work Experience" },
-    { value: "Government", label: "Infrastructure Projects" },
+    { value: "3 Years", label: "IT Work Experience" },
+    { value: "IT", label: "Infrastructure Projects" },
     { value: "Linux", label: "Systems" },
     { value: "AWS", label: "Cloud Platform" },
 ];
 
 const HIGHLIGHTS = [
     {
-        title: "Government Infrastructure Projects",
+        title: "Government IT Infrastructure Projects",
         body: "I contributed to IT infrastructure work for government-linked projects, covering deployment, configuration and ongoing support.",
     },
     {
@@ -107,7 +106,7 @@ function Home() {
                         
                         You may call me <b>Jia Riang</b> or <b>Matthew.</b>
                         <br />
-                        I am a Information Technology student from Singapore Polytechnic 
+                        I am an Information Technology student from Singapore Polytechnic 
                         specializing in <b>Cybersecurity & Cloud Computing.</b>
                     </p>
 
@@ -218,9 +217,9 @@ function Home() {
 
                         <li>Diploma in Information Technology</li>
 
-                        <li>Cyber Security Enthusiast</li>
+                        <li>IT GRC (Governance, Risk and Compliance) Enthusiast</li>
 
-                        <li>IT Project Engineer + Project Team Lead</li>
+                        <li>IT Project Engineer + Team Lead</li>
 
                         <li>Learning Cloud & Cybersecurity</li>
 

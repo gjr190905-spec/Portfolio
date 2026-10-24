@@ -82,7 +82,7 @@ function Certifications() {
                 <div className="heroOverlay">
 
                     <h2>
-                        CERTIFICATIONS &amp; Badges
+                        CERTIFICATIONS &amp; training
                     </h2>
                     <hr/>
 

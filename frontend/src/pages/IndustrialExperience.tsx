@@ -8,7 +8,7 @@ import banner from "../assets/images/banners/work_banner.png";
 
 const EXPERIENCE = [
     {
-        role: "Project Team Lead",
+        role: "IT Project Team Lead",
         org: "Sky & F Pte Ltd · Seasonal, On-site",
         date: "Dec 2025 – Present",
         current: true,

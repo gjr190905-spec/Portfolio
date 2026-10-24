@@ -97,7 +97,8 @@ function Education() {
 
                 <p>
                     My academic path began from ITE to Singapore Polytechnic, building a foundation
-                    in network security before specializing further into cloud and cybersecurity.
+                    in network security before specializing further into cloud, cybersecurity 
+                    and IT GRC (Governance, Risk and Compliance) recently.
                 </p>
                 </section>
             
